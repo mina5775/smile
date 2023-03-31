@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 1040px;
+    height: 700px;
+    background-color: aqua;
+    border: none;
+    border: 3px solid #f00;
+    border-radius: 5px ;
+}
+
+.smile{
+    animation-name: anim1;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+}
+
+@keyframes anim1{
+    0%{
+        transform: translateX(0) rotate(0);
+    }
+    25%{
+        transform: translateX(840px) rotate(-180deg);
+    }
+    50%{
+        transform: translateX(840px) translateY(500px) rotate(360deg);
+    }
+    75%{
+        transform: translateX(0) translateY(500px) rotate(180deg);
+    }
+}
+
+.one{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 55px;
+    margin-top: 50px;
+}
+
+.two{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 120px;
+    margin-top: 50px;
+}
+
+.three{
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    background-color: black;
+    margin-left: 68px;
+    margin-top: 125px;
+    border: none;
+    border-bottom-left-radius: 30px ;
+    border-bottom-right-radius: 30px;    
+}
